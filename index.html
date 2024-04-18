@@ -83,11 +83,21 @@
       <!-- Tab Content -->
       <div class="tab-content">
           <div class="tab-pane fade show active" id="personal">
-              <!-- Content for Personal -->
               <p>Use cases and details for Individuals</p>
               <button class="btn btn-primary" onclick="openForm('Personal')">Join Waiting List</button>
           </div>
-          <!-- Repeat for other tabs -->
+          <div class="tab-pane fade" id="business">
+              <p>Use cases and details for Businesses</p>
+              <button class="btn btn-primary" onclick="openForm('Business')">Join Waiting List</button>
+          </div>
+          <div class="tab-pane fade" id="academia">
+              <p>Use cases and details for Academia</p>
+              <button class="btn btn-primary" onclick="openForm('Academia')">Join Waiting List</button>
+          </div>
+          <div class="tab-pane fade" id="government">
+              <p>Use cases and details for Government</p>
+              <button class="btn btn-primary" onclick="openForm('Government')">Join Waiting List</button>
+          </div>
       </div>
     </div>
 
@@ -97,7 +107,7 @@
           <div class="modal-content">
               <div class="modal-header">
                   <h5 class="modal-title" id="waitingListModalLabel">Join the Waiting List</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" the btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                   <form>
