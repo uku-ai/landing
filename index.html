@@ -1,263 +1,361 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Revolutionizing AI with human intuition for better decision-making and understanding.">
-    <meta name="keywords" content="AI, Machine Learning, Data Analysis, Ethical AI, Adaptive Learning">
-    <title>Welcome to uku.ai</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">uku.ai</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#value">Value</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#use-cases">Use Cases</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Join the Waiting List</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Revolutionizing AI with human intuition for better decision-making and understanding." />
+		<meta
+			name="keywords"
+			content="AI, Machine Learning, Data Analysis, Ethical AI, Adaptive Learning" />
+		<title>Welcome to uku.ai</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-    <!-- Hero Section -->
-    <div class="hero-background text-center" style="background-image: url('your-image-url.jpg');">
-      <h1 class="display-5 fw-bold text-white">Understandable AI</h1>
-      <h2 class="fw-bold text-white">For an Understandable World</h2>
-      <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4 text-white">Revolutionizing the integration of AI with human intuition to enhance decision-making and understanding. Join us on a journey to innovate responsibly and ethically.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <a href="#value" class="btn btn-primary btn-lg px-4 gap-3">Learn More</a>
-              <button class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#myModal">Join Waiting List</button>
-          </div>
-      </div>
-  </div>  
+	<body>
+		<!-- Header for better semantic HTML -->
+		<header>
+			<!-- Nav Bar -->
+			<nav
+				class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+				aria-label="Main navigation">
+				<div class="container">
+					<a class="navbar-brand" href="#">uku.ai</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#home"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#value">Value</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#features">Features</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#use-cases">Use Cases</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about-us">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#faq">FAQ</a>
+							</li>
+							<li class="nav-item">
+								<button
+									class="btn btn-primary"
+									data-bs-toggle="modal"
+									data-bs-target="#joinWaitingListModal">
+									Join the Waiting List
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-    <!-- Value Section -->
-    <div id="value" class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>What Sets Us Apart</h2>
-          <p>At uku.ai, we differentiate ourselves from the competition through:</p>
-          <ul>
-            <li>Advanced AI algorithms that provide accurate and reliable results</li>
-            <li>Transparent and interpretable models, allowing users to understand the decision-making process</li>
-            <li>Ethical AI practices that prioritize user privacy and data protection</li>
-            <li>Continuous innovation and updates to stay ahead in the rapidly evolving AI landscape</li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <h2>How We Improve Lives and Businesses</h2>
-          <p>Our AI-powered solution brings several benefits to users:</p>
-          <ul>
-            <li>Enhanced decision-making capabilities, leading to better outcomes and increased efficiency</li>
-            <li>Improved understanding of complex data, enabling users to uncover valuable insights</li>
-            <li>Streamlined processes and automation, saving time and resources</li>
-            <li>Increased productivity and competitiveness in various industries</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+		<!-- Main Content -->
+		<main>
+			<!-- Hero Section -->
+			<section
+				class="hero-background text-center"
+				style="background-image: url('your-image-url.jpg')"
+				aria-label="Hero Section">
+				<h1 class="display-5 fw-bold text-white">Understandable AI</h1>
+				<h2 class="fw-bold text-white">For an Understandable World</h2>
+				<div class="col-lg-6 mx-auto">
+					<p class="lead mb-4 text-white">
+						Revolutionising the integration of AI with human intuition to
+						enhance decision-making and understanding. Join us on a journey to
+						innovate responsibly and ethically.
+					</p>
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+						<a href="#value" class="btn btn-primary btn-lg px-4 gap-3"
+							>Learn More</a
+						>
+						<button
+							class="btn btn-outline-secondary btn-lg px-4"
+							data-bs-toggle="modal"
+							data-bs-target="#joinWaitingListModal">
+							Join Waiting List
+						</button>
+					</div>
+				</div>
+			</section>
 
-    <!-- Features Section -->
-    <div id="features" class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Key Features</h2>
-          <p>Discover the powerful features of uku.ai:</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <h3>Feature 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-        <div class="col-lg-4">
-          <h3>Feature 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-        <div class="col-lg-4">
-          <h3>Feature 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-      </div>
-    </div>>
+			<!-- Value Section -->
+			<section id="value" class="container" aria-label="Value Section">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2>What Sets Us Apart</h2>
+						<p>
+							At uku.ai, we differentiate ourselves from the competition
+							through:
+						</p>
+						<ul>
+							<li>
+								Advanced AI algorithms that provide accurate and reliable
+								results
+							</li>
+							<li>
+								Transparent and interpretable models, allowing users to
+								understand the decision-making process
+							</li>
+							<li>
+								Ethical AI practices that prioritize user privacy and data
+								protection
+							</li>
+							<li>
+								Continuous innovation and updates to stay ahead in the rapidly
+								evolving AI landscape
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<h2>How We Improve Lives and Businesses</h2>
+						<p>Our AI-powered solution brings several benefits to users:</p>
+						<ul>
+							<li>
+								Enhanced decision-making capabilities, leading to better
+								outcomes and increased efficiency
+							</li>
+							<li>
+								Improved understanding of complex data, enabling users to
+								uncover valuable insights
+							</li>
+							<li>
+								Streamlined processes and automation, saving time and resources
+							</li>
+							<li>
+								Increased productivity and competitiveness in various industries
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
+			<!-- Features Section -->
+			<section id="features" class="container" aria-label="Features Section">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>Key Features</h2>
+						<p>Discover the powerful features of uku.ai:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<h3>Feature 1</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+							auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec
+							tincidunt nisl nunc id odio.
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<h3>Feature 2</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+							auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec
+							tincidunt nisl nunc id odio.
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<h3>Feature 3</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+							auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec
+							tincidunt nisl nunc id odio.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <!-- About Us Section -->
-    <div id="about-us" class="container">
-      <!-- Team Section -->
-    <div id="team" class="container">
-      <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 1">
-            <div class="card-body">
-              <h5 class="card-title">Team Member 1</h5>
-              <p class="card-text">Role: Software Engineer. Relevant because they develop the core functionality.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 2">
-            <div class="card-body">
-              <h5 class="card-title">Team Member 2</h5>
-              <p class="card-text">Role: Product Manager. Relevant because they guide the product's direction and features.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 3">
-            <div class="card-body">
-              <h5 class="card-title">Team Member 3</h5>
-              <p class="card-text">Role: UX Designer. Relevant because they ensure the product is user-friendly and intuitive.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 4 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 4">
-            <div class="card-body">
-              <h5 class="card-title">Team Member 4</h5>
-              <p class="card-text">Role: Data Scientist. Relevant because they analyze user data to improve the product.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 5 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 5">
-            <div class="card-body">
-              <h5 class="card-title">Team Member 5</h5>
-              <p class="card-text">Role: Marketing Specialist. Relevant because they promote the product and attract users.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 6 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 6">
-            <div class="card-body">
-              <h5 class="card-title">Team Member 6</h5>
-              <p class="card-text">Role: Customer Support. Relevant because they assist users and gather feedback.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Use Cases Section -->
-    <div id="use-cases" class="container">
-      <!-- Tabs for Industry Verticals -->
-      <ul class="nav nav-tabs">
-          <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#personal" data-bs-toggle="tab">Personal</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#business" data-bs-toggle="tab">Business</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#academia" data-bs-toggle="tab">Academia</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#government" data-bs-toggle="tab">Government</a>
-          </li>
-      </ul>
+		<!-- Use Cases Section -->
+		<section id="use-cases" class="container" aria-label="Use Cases Section">
+			<h2 class="text-center">Use Cases</h2>
+			<div class="row">
+				<div class="col-lg-3">
+					<h3>Personal</h3>
+					<p>
+						Personalised AI applications to enhance daily decision making and
+						productivity.
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<h3>Business</h3>
+					<p>
+						Streamline operations and improve analytics with our tailored
+						business solutions.
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<h3>Academia</h3>
+					<p>
+						Support academic research with advanced data analysis tools and
+						collaborative platforms.
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<h3>Government</h3>
+					<p>
+						Enhance public service delivery through intelligent AI-driven
+						processes and transparency.
+					</p>
+				</div>
+			</div>
+		</section>
 
-      <!-- Tab Content -->
-      <div class="tab-content">
-          <div class="tab-pane fade show active" id="personal">
-              <p>Use cases and details for Individuals</p>
-              <button class="btn btn-primary" onclick="openForm('Personal')">Join Waiting List</button>
-          </div>
-          <div class="tab-pane fade" id="business">
-              <p>Use cases and details for Businesses</p>
-              <button class="btn btn-primary" onclick="openForm('Business')">Join Waiting List</button>
-          </div>
-          <div class="tab-pane fade" id="academia">
-              <p>Use cases and details for Academia</p>
-              <button class="btn btn-primary" onclick="openForm('Academia')">Join Waiting List</button>
-          </div>
-          <div class="tab-pane fade" id="government">
-              <p>Use cases and details for Government</p>
-              <button class="btn btn-primary" onclick="openForm('Government')">Join Waiting List</button>
-          </div>
-      </div>
-    </div>
+		<!-- About Us Section -->
+		<section id="about-us" class="container" aria-label="About Us Section">
+			<h2 class="text-center">About Us</h2>
+			<p>
+				At uku.ai, we believe in harnessing the power of artificial intelligence
+				to create a more intuitive and understandable future. Our team of
+				experts is dedicated to developing innovative solutions that integrate
+				seamlessly into everyday life.
+			</p>
+		</section>
 
-    <!-- FAQ Section -->
-    <div id="faq" class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Frequently Asked Questions</h2>
-          <p>Find answers to common questions about uku.ai:</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3>Question 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-        <div class="col-lg-6">
-          <h3>Question 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3>Question 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-        <div class="col-lg-6">
-          <h3>Question 4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet aliquam, velit nunc aliquam nunc, nec tincidunt nisl nunc id odio.</p>
-        </div>
-      </div>
-    </div>
+		<!-- FAQ Section -->
+		<section id="faq" class="container" aria-label="FAQ Section">
+			<h2 class="text-center">Frequently Asked Questions</h2>
+			<div class="accordion" id="faqAccordion">
+				<div class="accordion-item">
+					<h3 class="accordion-header" id="headingOne">
+						<button
+							class="accordion-button"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseOne"
+							aria-expanded="true"
+							aria-controls="collapseOne">
+							What is the primary function of our AI?
+						</button>
+					</h3>
+					<div
+						id="collapseOne"
+						class="accordion-collapse collapse show"
+						aria-labelledby="headingOne"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							Our AI helps in making complex decisions by integrating vast
+							amounts of data and providing interpretable outcomes.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h3 class="accordion-header" id="headingTwo">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo"
+							aria-expanded="false"
+							aria-controls="collapseTwo">
+							How does our AI ensure user privacy?
+						</button>
+					</h3>
+					<div
+						id="collapseTwo"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingTwo"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							We adhere to the highest standards of data protection and ethical
+							AI practices to protect user privacy at all times.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white py-4">
-      <div class="container">
-          <p class="mb-0">Connect with us on social media or reach out via email at contact@uku.ai.</p>
-          <p class="mb-0">&copy; 2024 uku.ai. All rights reserved.</p>
-      </div>
-    </footer>
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white py-4">
+			<div class="container">
+				<p class="mb-0">
+					Connect with us on social media or reach out via email at
+					contact@uku.ai.
+				</p>
+				<p class="mb-0">&copy; 2024 uku.ai. All rights reserved.</p>
+			</div>
+		</footer>
 
-    <!-- Modals -->
+		<!-- Modals -->
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="joinWaitingListModal"
+			tabindex="-1"
+			aria-labelledby="waitingListModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="joinWaitingListModal">
+							Join the Waiting List
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="emailAddress" class="form-label"
+									>Email address</label
+								>
+								<input
+									type="email"
+									class="form-control"
+									id="emailAddress"
+									aria-describedby="emailHelp" />
+								<div id="emailHelp" class="form-text">
+									We'll never share your email with anyone else.
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="userInterest" class="form-label"
+									>What are you interested in?</label
+								>
+								<select class="form-select" id="userInterest">
+									<option selected>Choose...</option>
+									<option value="personal">Personal Use</option>
+									<option value="business">Business Use</option>
+									<option value="academic">Academic Use</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-</body>
+		<!-- Scripts -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
 </html>
