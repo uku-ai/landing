@@ -19,9 +19,7 @@
 			rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-
 	<body>
-		<!-- Header for better semantic HTML -->
 		<header>
 			<!-- Nav Bar -->
 			<nav
@@ -33,14 +31,14 @@
 						class="navbar-toggler"
 						type="button"
 						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
+						data-bs-target="#navbarContent"
+						aria-controls="navbarContent"
 						aria-expanded="false"
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
 								<a class="nav-link active" aria-current="page" href="#home"
 									>Home</a
@@ -79,13 +77,22 @@
 		<main>
 			<!-- Hero Section -->
 			<section
-				class="hero-background text-center"
-				style="background-image: url('your-image-url.jpg')"
+				class="hero-background text-center section"
+				style="
+					background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+						url('path-to-your-image.jpg') no-repeat center center / cover;
+				"
 				aria-label="Hero Section">
-				<h1 class="display-5 fw-bold text-white">Understandable AI</h1>
-				<h2 class="fw-bold text-white">For an Understandable World</h2>
+				<h1
+					class="display-4 fw-bold text-white"
+					style="text-shadow: 2px 2px 4px #000">
+					Understandable AI
+				</h1>
+				<h2 class="fw-bold text-white" style="text-shadow: 2px 2px 4px #000">
+					For an Understandable World
+				</h2>
 				<div class="col-lg-6 mx-auto">
-					<p class="lead mb-4 text-white">
+					<p class="lead mb-4 text-white" style="text-shadow: 1px 1px 2px #000">
 						Revolutionising the integration of AI with human intuition to
 						enhance decision-making and understanding. Join us on a journey to
 						innovate responsibly and ethically.
@@ -95,9 +102,10 @@
 							>Learn More</a
 						>
 						<button
-							class="btn btn-outline-secondary btn-lg px-4"
+							class="btn btn-outline-light btn-lg px-4"
 							data-bs-toggle="modal"
-							data-bs-target="#joinWaitingListModal">
+							data-bs-target="#joinWaitingListModal"
+							style="border-color: #fff; color: #fff; transition: all 0.3s">
 							Join Waiting List
 						</button>
 					</div>
@@ -105,7 +113,7 @@
 			</section>
 
 			<!-- Value Section -->
-			<section id="value" class="container" aria-label="Value Section">
+			<section id="value" class="container section" aria-label="Value Section">
 				<div class="row">
 					<div class="col-lg-6">
 						<h2>What Sets Us Apart</h2>
@@ -158,7 +166,7 @@
 			<!-- Features Section -->
 			<section
 				id="features"
-				class="container py-5"
+				class="container py-5 section"
 				aria-label="Features Section">
 				<h2 class="pb-2 border-bottom">Features with title</h2>
 				<div class="row align-items-md-center g-5 py-5">
@@ -233,8 +241,11 @@
 			</section>
 
 			<!-- Use Cases Section -->
-			<section id="use-cases" class="container" aria-label="Use Cases Section">
-				<h2 class="text-center">Use Cases</h2>
+			<section
+				id="use-cases"
+				class="container section"
+				aria-label="Use Cases Section">
+				<h2 class="pb-2 border-bottom">Use Cases</h2>
 				<div class="row">
 					<div class="col-lg-3">
 						<h3>Personal</h3>
@@ -268,7 +279,10 @@
 			</section>
 
 			<!-- About Us Section -->
-			<section id="about-us" class="container" aria-label="About Us Section">
+			<section
+				id="about-us"
+				class="container section"
+				aria-label="About Us Section">
 				<h2 class="text-center">About Us</h2>
 				<p class="text-center">
 					Meet our dedicated team who are at the forefront of revolutionising AI
@@ -386,7 +400,7 @@
 			</section>
 
 			<!-- FAQ Section -->
-			<section id="faq" class="container" aria-label="FAQ Section">
+			<section id="faq" class="container section" aria-label="FAQ Section">
 				<h2 class="text-center">Frequently Asked Questions</h2>
 				<div class="accordion" id="faqAccordion">
 					<div class="accordion-item">
