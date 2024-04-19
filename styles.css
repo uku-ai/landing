@@ -3,13 +3,9 @@
  */
 
 :root {
-  --bs-body-bg: var(--bs-gray-100);
+	--bs-body-bg: var(--bs-gray-100);
 }
 
 html {
-  scroll-behavior: smooth;
-}
-
-.card {
-  margin: 10px 10px;
+	scroll-behavior: smooth;
 }
