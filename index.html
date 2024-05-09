@@ -14,25 +14,40 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: url(assets/under_construction.gif) no-repeat center center fixed; 
+            background: url(under_construction.gif) no-repeat center center fixed; 
             background-size: cover;
         }
         .container {
             text-align: center;
-            background: white; /* Added to make the text more readable against the background */
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px; /* Spacing between elements */
         }
         h1 {
             font-family: sans-serif;
             font-size: 2em;
             color: blue;
+            margin: 0;
+        }
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Website is under construction!</h1>
+    </div>
+    <div class="form-container">
         <div data-tf-live="01HXFRSFS1Q9AZHH4H5ZFQHDR6"></div><script src="//embed.typeform.com/next/embed.js"></script>
     </div>
 </body>
