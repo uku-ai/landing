@@ -16,7 +16,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center; /* Reset to center for overall alignment */
             background: url(assets/under_construction.gif) no-repeat center center fixed; 
             background-size: cover;
         }
@@ -26,7 +26,9 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-top: 20px; /* Added margin-top to push it down a bit */
+            position: absolute; /* Use absolute positioning */
+            bottom: 20px; /* Position at the bottom with some margin */
+            width: 90%; /* Ensure it spans most of the width with padding */
         }
         h1 {
             font-family: sans-serif;
@@ -39,19 +41,19 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: absolute; /* Using absolute to center it */
-            top: 50%; /* Positioning at half the height of the viewport */
-            left: 50%; /* Positioning at half the width of the viewport */
-            transform: translate(-50%, -50%); /* Centering the div */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Website is under construction!</h1>
-    </div>
     <div class="form-container">
         <div data-tf-live="01HXFRSFS1Q9AZHH4H5ZFQHDR6"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+    <div class="container">
+        <h1>Website is under construction!</h1>
     </div>
 </body>
 </html>
