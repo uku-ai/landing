@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
+    <meta name="description" content="where humanity meets technology" />
     <meta name="author" content="uku.ai" />
     <title>uku.ai</title>
     <!-- Favicon-->
@@ -16,7 +16,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             background: url(assets/under_construction.gif) no-repeat center center fixed; 
             background-size: cover;
         }
@@ -26,7 +26,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px; /* Spacing between elements */
+            margin-top: 20px; /* Added margin-top to push it down a bit */
         }
         h1 {
             font-family: sans-serif;
@@ -38,10 +38,11 @@
             width: 300px;
             padding: 20px;
             border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: absolute; /* Using absolute to center it */
+            top: 50%; /* Positioning at half the height of the viewport */
+            left: 50%; /* Positioning at half the width of the viewport */
+            transform: translate(-50%, -50%); /* Centering the div */
         }
     </style>
 </head>
