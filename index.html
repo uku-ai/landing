@@ -26,9 +26,12 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: absolute; /* Use absolute positioning */
-            bottom: 20px; /* Position at the bottom with some margin */
-            width: 90%; /* Ensure it spans most of the width with padding */
+            position: absolute;
+            bottom: 20px;
+            width: fit-content; /* Makes the width as wide as the content */
+            min-width: 200px; /* Optional: Ensures it's not too small */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
         }
         h1 {
             font-family: sans-serif;
