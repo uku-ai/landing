@@ -27,7 +27,14 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            height: 100%; /* Ensure the body stretches to the full viewport height */
+        }
+
         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures the footer is pushed to the bottom */
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--black-chip);
@@ -76,6 +83,7 @@
         }
 
         footer {
+            margin-top: auto; /* Pushes the footer to the bottom when the content is short */
             text-align: center;
             padding: 2rem;
             background-color: var(--deep-teal);
