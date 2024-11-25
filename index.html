@@ -27,14 +27,15 @@
             box-sizing: border-box;
         }
 
-        html, body {
-            height: 100%; /* Ensure the body stretches to the full viewport height */
+        html,
+        body {
+            height: 100%;
         }
 
         body {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensures the footer is pushed to the bottom */
+            justify-content: space-between;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--black-chip);
@@ -83,7 +84,7 @@
         }
 
         footer {
-            margin-top: auto; /* Pushes the footer to the bottom when the content is short */
+            margin-top: auto;
             text-align: center;
             padding: 2rem;
             background-color: var(--deep-teal);
@@ -107,20 +108,20 @@
         .video-container,
         .form-container {
             position: relative;
-            height: 75vh;
+            height: auto;
+            max-height: 600px;
             overflow: hidden;
-            border-radius: 12px; /* Rounded corners */
+            border-radius: 12px;
+            /* Rounded corners */
         }
 
         .video-container iframe,
         .form-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
+            min-height: 400px;
             height: 100%;
             border: 0;
-            border-radius: 12px; /* Rounded corners for iframe */
+            border-radius: 12px;
         }
     </style>
 </head>
@@ -137,8 +138,7 @@
         <!-- Video Card -->
         <div class="card" id="video-section">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vvCd_UfYxFo?enablejsapi=0"
-                    title="uku.ai introductory pitch"
+                <iframe src="https://www.youtube.com/embed/vvCd_UfYxFo?enablejsapi=0" title="uku.ai introductory pitch"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -148,8 +148,9 @@
         <!-- Form Card -->
         <div class="card" id="form-section">
             <div class="form-container">
-                <iframe class="airtable-embed" src="https://airtable.com/embed/app6DKvT3GbsGJU8r/pagSVNfrIKdCJdomu/form"
-                    frameborder="0" width="100%" height="533"></iframe>
+                <iframe src="https://airtable.com/embed/app6DKvT3GbsGJU8r/pagSVNfrIKdCJdomu/form" frameborder="0"
+                    style="background: transparent; border: 1px solid #ccc;">
+                </iframe>
             </div>
         </div>
     </main>
