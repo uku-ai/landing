@@ -172,28 +172,27 @@
             </p>
         </div>
     </footer>
-</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuLinks = document.querySelectorAll("nav a");
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuLinks = document.querySelectorAll("nav a");
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
 
-        menuLinks.forEach(link => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent the default link behavior
+                    const targetId = this.getAttribute("href").substring(1); // Get the target ID
+                    const targetElement = document.getElementById(targetId);
 
-                const targetId = this.getAttribute("href").substring(1); // Get the target ID
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - document.querySelector("header").offsetHeight, // Adjust for header height
-                        behavior: "smooth" // Smooth scrolling
-                    });
-                }
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - document.querySelector("header").offsetHeight, // Adjust for header height
+                            behavior: "smooth" // Smooth scrolling
+                        });
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
+</body>
 
 </html>
