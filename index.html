@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="where humanity meets technology">
+    <meta name="description" content="Trustworthy AI Solutions for Regulated Industries - Neurosymbolic & Auditable">
     <meta name="author" content="uku.ai">
-    <title>uku.ai</title>
+    <title>UKU - Transparent AI | Neurosymbolic & Auditable</title>
     <link rel="icon" type="image/x-icon" href="assets/uku_icon.ico">
     <style>
         :root {
@@ -31,9 +31,6 @@
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--black-chip);
@@ -42,20 +39,25 @@
         }
 
         .container {
-            width: 100%;
-            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
+        /* Header Styles */
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
             background-color: var(--peach-fuzz);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
         }
 
         .logo {
@@ -65,13 +67,13 @@
 
         nav {
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         nav a {
             text-decoration: none;
             color: var(--black-chip);
-            font-weight: bold;
+            font-weight: 600;
             font-size: 1rem;
             transition: color 0.3s;
         }
@@ -80,50 +82,171 @@
             color: var(--deep-teal);
         }
 
-        footer {
-            margin-top: auto;
-            text-align: center;
-            padding: 2rem;
+        .cta-button {
             background-color: var(--deep-teal);
             color: var(--antique-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
+        .cta-button:hover {
+            background-color: var(--black-chip);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--sky-blue), var(--peach-fuzz));
+            padding: 6rem 0;
+            text-align: center;
+            color: var(--black-chip);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--deep-teal);
+            font-weight: 500;
+        }
+
+        .hero .description {
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--deep-teal);
+        }
+
+        .section-alt {
+            background-color: var(--warm-gray-light);
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        /* Card Styles */
         .card {
             background-color: var(--antique-white);
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
-            padding: 0;
-            margin: 2rem auto;
-            width: 100%;
-            max-width: 1200px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--deep-teal);
+        }
+
+        .card p {
+            color: var(--warm-gray-dark);
+            font-size: 1rem;
+        }
+
+        /* Industry Pills */
+        .industry-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .pill {
+            background-color: var(--sky-blue);
+            color: var(--black-chip);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* How It Works Flow */
+        .flow-diagram {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin: 3rem 0;
         }
 
-        .video-container {
+        .flow-step {
+            background-color: var(--antique-white);
+            border: 3px solid var(--deep-teal);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            max-width: 300px;
             position: relative;
-            width: 100%;
-            padding-top: 56.25%;
-            border-radius: 12px;
-            overflow: hidden;
         }
 
-        .video-container iframe {
+        .flow-step::after {
+            content: '↓';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            border-radius: 12px;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: var(--deep-teal);
+            font-weight: bold;
         }
 
+        .flow-step:last-child::after {
+            display: none;
+        }
+
+        /* Contact Form */
         .form-container {
             position: relative;
             width: 100%;
             height: 600px;
             border-radius: 12px;
             overflow: hidden;
+            background-color: var(--antique-white);
         }
 
         .form-container iframe {
@@ -135,61 +258,314 @@
             border: 0;
             border-radius: 12px;
         }
+
+        /* Footer */
+        footer {
+            background-color: var(--deep-teal);
+            color: var(--antique-white);
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--antique-white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--peach-fuzz);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--sky-blue);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.25rem;
+            }
+
+            .hero .description {
+                font-size: 1.1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .grid-3,
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-pills {
+                justify-content: flex-start;
+            }
+
+            .flow-diagram {
+                align-items: stretch;
+            }
+
+            .flow-step {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <img src="assets/uku_logo.webp" alt="uku.ai logo" class="logo">
-        <nav>
-            <a href="#video-section">Video</a>
-            <a href="#form-section">Join</a>
-        </nav>
-    </header>
-    <main class="container">
-        <!-- Video Card -->
-        <div class="card" id="video-section">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/vvCd_UfYxFo?enablejsapi=0" title="uku.ai introductory pitch"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-
-        <!-- Form Card -->
-        <div class="card" id="form-section">
-            <div class="form-container">
-                <iframe src="https://airtable.com/embed/app6DKvT3GbsGJU8r/pagSVNfrIKdCJdomu/form"
-                    title="uku.ai sign-up form"></iframe>
-            </div>
-        </div>
-    </main>
-    <footer id="footer">
         <div class="container">
-            <p>&copy; <span id="currentYear"></span> uku.ai. All rights reserved.</p>
+            <div class="header-content">
+                <img src="assets/uku_logo.webp" alt="UKU AI logo" class="logo">
+                <nav>
+                    <a href="#problems">Problems</a>
+                    <a href="#solutions">Solutions</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#industries">Industries</a>
+                </nav>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>UKU - Transparent AI</h1>
+            <p class="subtitle">Neurosymbolic & Auditable</p>
+            <p class="description">Trustworthy AI Solutions for Regulated Industries</p>
+            <a href="#contact" class="cta-button">Schedule Demo</a>
+        </div>
+    </section>
+    <!-- Problems Section -->
+    <section id="problems" class="section">
+        <div class="container">
+            <h2 class="section-title">The Problems We Solve</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>AI Hallucinations</h3>
+                    <p>Ensuring accuracy and reliability in AI-generated responses by eliminating false or misleading information that can occur with traditional AI systems.</p>
+                </div>
+                <div class="card">
+                    <h3>Lack of Transparency</h3>
+                    <p>Providing full audit trails and explainable AI decisions, making every step of the AI reasoning process visible and accountable.</p>
+                </div>
+                <div class="card">
+                    <h3>Regulatory Compliance</h3>
+                    <p>EU AI Act ready solutions that meet strict regulatory requirements for AI systems in regulated industries and critical applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Our Solutions</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Neurosymbolic AI</h3>
+                    <p>Combining the power of neural networks with symbolic logic to create AI systems that are both intelligent and interpretable, bridging the gap between machine learning and formal reasoning.</p>
+                </div>
+                <div class="card">
+                    <h3>Knowledge Representation & Reasoning (KRR)</h3>
+                    <p>Structured knowledge systems that enable precise reasoning and decision-making, ensuring AI outputs are grounded in verifiable facts and logical rules.</p>
+                </div>
+                <div class="card">
+                    <h3>Retrieval-Augmented Generation (RAG)</h3>
+                    <p>Enhanced AI responses through intelligent information retrieval, ensuring answers are based on accurate, up-to-date, and relevant source materials.</p>
+                </div>
+                <div class="card">
+                    <h3>Multi-Layer Architecture</h3>
+                    <p>Personal, collaborative, and global knowledge layers that adapt to your specific needs while maintaining consistency and accuracy across all levels of operation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">How UKU Works</h2>
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <h3>User Query</h3>
+                    <p>Your question enters our Integration Layer with RAG</p>
+                </div>
+                <div class="flow-step">
+                    <h3>Knowledge Processing</h3>
+                    <p>Structured Knowledge & Rules + Logical Validation</p>
+                </div>
+                <div class="flow-step">
+                    <h3>LLM Integration</h3>
+                    <p>Validated Context to LLM (Bring Your Own LLM)</p>
+                </div>
+                <div class="flow-step">
+                    <h3>Transparent Output</h3>
+                    <p>Transparent & Traceable Decision Output</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Industries We Serve</h2>
+            <div class="industry-pills">
+                <div class="pill">FinTech</div>
+                <div class="pill">Healthcare</div>
+                <div class="pill">Legal</div>
+                <div class="pill">Compliance</div>
+                <div class="pill">Auditing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose UKU Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose UKU?</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Fewer Hallucinations</h3>
+                    <p>Our neurosymbolic approach significantly reduces AI hallucinations by grounding responses in verified knowledge and logical reasoning.</p>
+                </div>
+                <div class="card">
+                    <h3>Full Transparency</h3>
+                    <p>Every AI decision comes with complete audit trails, making it easy to understand how conclusions were reached.</p>
+                </div>
+                <div class="card">
+                    <h3>Adaptable to Regulations</h3>
+                    <p>Built to meet evolving regulatory requirements, including EU AI Act compliance and industry-specific standards.</p>
+                </div>
+                <div class="card">
+                    <h3>Privacy-First</h3>
+                    <p>Your data remains secure with our privacy-first architecture that keeps sensitive information protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="card">
+                <div class="form-container">
+                    <iframe src="https://airtable.com/embed/app6DKvT3GbsGJU8r/pagSVNfrIKdCJdomu/form"
+                        title="UKU AI contact form"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About UKU</h4>
+                    <ul>
+                        <li><a href="#about">Founding Story</a></li>
+                        <li><a href="#team">Team Profiles</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Latest Updates</h4>
+                    <ul>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#blog">Blog Posts</a></li>
+                        <li><a href="#whitepapers">Whitepapers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#contact">Request a Demo</a></li>
+                        <li><a href="#sales">Sales Inquiry</a></li>
+                        <li><a href="#general">General Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> UKU 2025. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script>
-        // Ensure the year is dynamically updated after the DOM is loaded
+        // Update the year dynamically
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-            const menuLinks = document.querySelectorAll("nav a");
+            // Smooth scrolling for navigation links
+            const menuLinks = document.querySelectorAll("nav a, .cta-button");
             menuLinks.forEach(link => {
                 link.addEventListener("click", function (event) {
-                    event.preventDefault(); // Prevent the default link behavior
+                    const href = this.getAttribute("href");
+                    if (href.startsWith("#")) {
+                        event.preventDefault();
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
 
-                    const targetId = this.getAttribute("href").substring(1); // Get the target ID
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - document.querySelector("header").offsetHeight, // Adjust for header height
-                            behavior: "smooth" // Smooth scrolling
-                        });
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - document.querySelector("header").offsetHeight,
+                                behavior: "smooth"
+                            });
+                        }
                     }
                 });
+            });
+
+            // Add scroll effect to header
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.backgroundColor = 'rgba(254, 190, 152, 0.95)';
+                } else {
+                    header.style.backgroundColor = 'var(--peach-fuzz)';
+                }
             });
         });
     </script>
